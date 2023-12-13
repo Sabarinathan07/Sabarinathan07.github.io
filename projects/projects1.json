@@ -48,7 +48,16 @@
             "code": "https://github.com/analysed12/Infits_Web_App"
         }
     },
-
+    {
+        "name": "AutoReply - Gmail API",
+        "desc": "Automate the process of sending auto reply emails using nodejs and googleapis",
+        "image": "web-05",
+        "category": "web",
+        "links": {
+            "view": "https://github.com/Sabarinathan07/AutoReply-Gmail",
+            "code": "https://github.com/Sabarinathan07/AutoReply-Gmail"
+        }
+    },
     {
         "name": "Memory Card Game",
         "desc": "Created a Simple memory card game using reactJs.The user can play with it.",
