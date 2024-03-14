@@ -3,6 +3,34 @@
         "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
     },
     {
+        "name": "JavaScript",
+        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+    },
+    {
+        "name": "Typescript",
+        "icon": "https://img.icons8.com/color/48/000000/typescript--v1.png"
+    },
+    {
+        "name": "NodeJS",
+        "icon": "https://img.icons8.com/color/48/000000/nodejs.png"
+    },
+    {
+        "name": "NestJS",
+        "icon": "https://img.icons8.com/color/48/000000/nestjs.png"
+    },
+    {
+        "name": "Golang",
+        "icon": "./assets/images/skills/go.png"
+    },
+    {
+        "name": "PHP",
+        "icon": "https://img.icons8.com/offices/48/000000/php-logo.png"
+    },
+    {
+        "name": "ExpressJS",
+        "icon": "https://img.icons8.com/fluency/48/000000/node-js.png"
+    },
+    {
         "name": "DSA",
         "icon": "https://img.icons8.com/glyph-neue/48/ffffff/database.png"
     },
@@ -22,48 +50,14 @@
         "name": "CSS3",
         "icon": "https://img.icons8.com/color/48/000000/css3.png"
     },
-    {
-        "name": "JavaScript",
-        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
-    },
-    {
-        "name": "NodeJS",
-        "icon": "https://img.icons8.com/color/48/000000/nodejs.png"
-    },
-    {
-        "name": "Golang",
-        "icon": "./assets/images/skills/go.png"
-    },
-    {
-        "name": "PHP",
-        "icon": "https://img.icons8.com/offices/48/000000/php-logo.png"
-    },
-    {
-        "name": "ExpressJS",
-        "icon": "https://img.icons8.com/fluency/48/000000/node-js.png"
-    },
-    {
-        "name": "ReactJS",
-        "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
-    },
-    {
-        "name": "Redux",
-        "icon": "https://img.icons8.com/color/48/000000/redux.png"
-    },
+
     {
         "name": "Postman",
         "icon": "./assets/images/skills/postman.png"
-    }, {
+    },
+    {
         "name": "Android",
         "icon": "https://img.icons8.com/fluency/48/000000/android-os.png"
-    },
-    {
-        "name": "Bootstrap",
-        "icon": "https://img.icons8.com/color/48/000000/bootstrap.png"
-    },
-    {
-        "name": "MaterialUI",
-        "icon": "https://img.icons8.com/color/48/000000/material-ui.png"
     },
     {
         "name": "Python",
@@ -78,6 +72,10 @@
         "icon": "https://img.icons8.com/color/48/000000/c-programming.png"
     },
     {
+        "name": "Jest",
+        "icon": "./assets/images/skills/jestjs1.ico"
+    },
+    {
         "name": "Firebase",
         "icon": "https://img.icons8.com/color/48/000000/firebase.png"
     },
@@ -88,5 +86,9 @@
     {
         "name": "MySQL",
         "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
+    },
+    {
+        "name": "PostgreSQL",
+        "icon": "./assets/images/skills/postgresql.png"
     }
 ]
