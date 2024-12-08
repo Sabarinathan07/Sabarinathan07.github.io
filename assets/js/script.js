@@ -43,7 +43,7 @@ $(document).ready(function () {
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["backend development", "software development"],
+    strings: ["Backend Development", "Software Development", "Frontend Development"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,

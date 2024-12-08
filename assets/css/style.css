@@ -1473,3 +1473,12 @@ form .button-area {
 
 
 /* scroll top ends */
+.email-link {
+    color: inherit; /* Use the same color as the surrounding text */
+    text-decoration: none; /* Remove the underline */
+    text-transform: unset;
+}
+
+.email-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}

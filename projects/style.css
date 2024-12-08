@@ -417,3 +417,11 @@ header .navbar ul li a:hover {
 
 
 /* scroll top ends */
+.email-link {
+    color: inherit; /* Use the same color as the surrounding text */
+    text-decoration: none; /* Remove the underline */
+}
+
+.email-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
