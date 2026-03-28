@@ -83,3 +83,4 @@ if (themeToggle) {
 console.log('%c👋 Hey there, fellow developer!','font-size:20px;font-weight:bold;color:#00F5A0');
 console.log('%cLike what you see? Let\'s connect!','font-size:14px;color:#8888A0');
 console.log('%chttps://github.com/Sabarinathan07','font-size:12px;color:#00F5A0');
+console.log('%chttps://www.linkedin.com/in/Sabarinathan07/','font-size:12px;color:#00F5A0');
