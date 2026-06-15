@@ -71,6 +71,11 @@
 				box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 			}
 
+			.controls-right {
+				display: flex;
+				gap: 12px;
+			}
+
 			.btn {
 				display: inline-flex;
 				align-items: center;
@@ -591,6 +596,21 @@
 				.resume-container {
 					padding: 24px;
 				}
+
+				.btn-text {
+					display: none;
+				}
+
+				.btn {
+					width: 42px;
+					height: 42px;
+					padding: 0;
+					justify-content: center;
+				}
+
+				.controls-bar {
+					padding: 12px 16px;
+				}
 			}
 		</style>
 	</head>
@@ -600,18 +620,20 @@
 			<button
 				class="btn"
 				onclick="location.href='index.html'"
-				id="backBtn">
-				← Back to Portfolio
+				id="backBtn"
+				aria-label="Back to Portfolio">
+				<span>←</span><span class="btn-text">Back to Portfolio</span>
 			</button>
-			<div style="display: flex; gap: 12px;">
+			<div class="controls-right">
 				<button class="btn" id="themeToggle" aria-label="Toggle Theme">
-					🌓 Toggle Theme
+					<span>🌓</span><span class="btn-text">Toggle Theme</span>
 				</button>
 				<button
 					class="btn btn-primary"
 					onclick="window.print()"
-					id="printBtn">
-					🖨️ Print / Save PDF
+					id="printBtn"
+					aria-label="Print or Save PDF">
+					<span>🖨️</span><span class="btn-text">Print / Save PDF</span>
 				</button>
 			</div>
 		</div>
