@@ -397,9 +397,9 @@
 					break;
 				}
 				case 'resume':
-					print('opening ' + link('resume.html', 'resume.html') + '…');
+					print('opening ' + link('/resume', 'sabari.dev/resume') + '…');
 					print(sub('or grab the ' + link('resume.pdf', 'PDF') + '.'));
-					window.open('resume.html', '_blank', 'noopener');
+					window.open('/resume', '_blank', 'noopener');
 					break;
 				case 'theme': {
 					const want = (args[0] || '').toLowerCase();

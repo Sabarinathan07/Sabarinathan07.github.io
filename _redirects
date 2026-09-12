@@ -1,4 +1,7 @@
 # Cloudflare Pages redirects
-/resume      /resume.html   301
-/cv          /resume.html   301
-/cv.pdf      /resume.pdf    301
+#
+# Pages already serves resume.html at /resume and 308s /resume.html -> /resume,
+# so /resume must NOT be redirected here or the two rules loop forever.
+/cv          /resume       301
+/cv.pdf      /resume.pdf   301
+/resume-pdf  /resume.pdf   301
