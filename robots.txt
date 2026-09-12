@@ -1,5 +1,14 @@
 User-agent: *
 Allow: /
 
-# Sitemap location
+# AI crawlers that send referral traffic
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+
 Sitemap: https://sabari.dev/sitemap.xml

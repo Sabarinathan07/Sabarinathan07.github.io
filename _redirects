@@ -1,0 +1,4 @@
+# Cloudflare Pages redirects
+/resume      /resume.html   301
+/cv          /resume.html   301
+/cv.pdf      /resume.pdf    301
