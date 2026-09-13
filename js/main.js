@@ -146,7 +146,7 @@
 			],
 			skills: () => [
 				key('languages'),
-				sub('Java · TypeScript · JavaScript · Golang · Python · SQL · PHP · C++ · C'),
+				sub('Java · TypeScript · JavaScript · Golang · Python · SQL · PHP'),
 				key('backend & frameworks'),
 				sub('Spring Boot · Node.js · NestJS · Express.js · REST APIs · Microservices · Gradle · Jest'),
 				key('frontend'),
