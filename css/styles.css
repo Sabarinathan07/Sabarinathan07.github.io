@@ -1247,7 +1247,11 @@ html.light-theme .band-alt .editor-json {
 	position: absolute;
 	inset: 0;
 	background: var(--accent);
-	transform: scaleY(0);
+	/* --rail-p is set by the scroll handler. A scroll-linked animation with
+	   `animation-range: cover` could only reach 100% after the whole section
+	   had left the viewport, so the rail never looked finished at the last
+	   entry — and it did nothing at all in Safari and Firefox. */
+	transform: scaleY(var(--rail-p, 0));
 	transform-origin: top;
 }
 .exp-row {
@@ -1280,6 +1284,12 @@ html.light-theme .band-alt .editor-json {
 }
 .exp-row:first-of-type::before {
 	top: 16px;
+}
+/* A dot lights up the moment the rail fill reaches it, so the line and the
+   markers stay in step. Hover just adds the halo on top. */
+.exp-row.passed::before {
+	border-color: var(--accent);
+	background: var(--accent);
 }
 .exp-row:hover::before {
 	border-color: var(--accent);
@@ -1818,17 +1828,6 @@ footer {
 .reveal-delay-3 { transition-delay: 0.24s; }
 
 /* Scroll-driven extras (progressively enhanced) */
-@supports (animation-timeline: view()) {
-	.exp-rail::after {
-		animation: railFill linear both;
-		animation-timeline: view();
-		animation-range: cover 0% cover 100%;
-	}
-}
-@keyframes railFill {
-	from { transform: scaleY(0); }
-	to { transform: scaleY(1); }
-}
 /* ===== REDUCED MOTION ===== */
 @media (prefers-reduced-motion: reduce) {
 	*,

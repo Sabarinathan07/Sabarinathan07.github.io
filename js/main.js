@@ -146,13 +146,13 @@
 			],
 			skills: () => [
 				key('languages'),
-				sub('Java · TypeScript · JavaScript · Golang · Python · PHP · C++ · C'),
-				key('backend'),
-				sub('Spring Boot · Node.js · NestJS · Express.js · REST API · Gradle · Jest'),
+				sub('Java · TypeScript · JavaScript · Golang · Python · SQL · PHP · C++ · C'),
+				key('backend & frameworks'),
+				sub('Spring Boot · Node.js · NestJS · Express.js · REST APIs · Microservices · Gradle · Jest'),
 				key('frontend'),
 				sub('React · Next.js · HTML5 · CSS3 · Android'),
-				key('data &amp; tools'),
-				sub('PostgreSQL · MySQL · MongoDB · Redis · Firebase · Docker · AWS · Git · Postman'),
+				key('databases & tools'),
+				sub('PostgreSQL · Oracle DB · MySQL · MongoDB · Redis · Firebase · Docker · AWS · Git · Postman · JMeter · DSA'),
 			],
 			projects: () => [
 				key('CodeBridge') + sub('full stack'),
@@ -648,6 +648,9 @@
 
 	/* ---------- Single rAF-throttled scroll handler ---------- */
 	const navbar = document.getElementById('navbar');
+	const expWrap = document.querySelector('.exp-wrap');
+	const expRail = document.querySelector('.exp-rail');
+	const expRows = Array.from(document.querySelectorAll('.exp-row'));
 	const sections = document.querySelectorAll('section[id]');
 	const navLinks = Array.from(document.querySelectorAll('.nav-links a'));
 	let ticking = false;
@@ -670,6 +673,26 @@
 				const start = vh * 0.88;
 				const travel = r.height + vh * 0.32;
 				p.style.setProperty('--p', clamp((start - r.top) / travel, 0, 1).toFixed(3));
+			});
+		}
+
+		// Experience rail: fill tracks a line 45% down the viewport and is
+		// complete once the bottom of the last entry reaches the fold.
+		if (expWrap && expRail && !reduceMotion) {
+			const r = expWrap.getBoundingClientRect();
+			const focus = vh * 0.45;
+			const travel = Math.max(r.height - vh * 0.55, 1);
+			const p = clamp((focus - r.top) / travel, 0, 1);
+			expWrap.style.setProperty('--rail-p', p.toFixed(3));
+
+			// Light each dot exactly when the fill edge passes its centre,
+			// measured off the rail itself so the two can never drift apart.
+			const rail = expRail.getBoundingClientRect();
+			const fillEdge = rail.top + rail.height * p;
+			expRows.forEach((row, i) => {
+				const dotCentre =
+					row.getBoundingClientRect().top + (i === 0 ? 16 : 56) + 6;
+				row.classList.toggle('passed', dotCentre <= fillEdge);
 			});
 		}
 
